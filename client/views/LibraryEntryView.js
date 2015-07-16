@@ -4,7 +4,8 @@ var LibraryEntryView = Backbone.View.extend({
   tagName: 'tr',
 
 
-  template: _.template('<td><button id="upvote"/> <%= votes %> <button id="downvote"/></td>'+
+  template: _.template('<td><img id="upvote" src="upvote.png" width="17px" height="17px"/> <%= votes %> '+
+    '<img id="downvote" src="downvote.png" width="17px" height="17px"/></td>'+
     '<td class="songtext">(<%= artist %>)</td>'+
     '<td class="songtext"><%= title %></td>'+
     '<td class="songtext"><%= playcount %></td>'),

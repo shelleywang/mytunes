@@ -11,7 +11,7 @@ var LibraryEntryView = Backbone.View.extend({
     '<td class="songtext"><%= playcount %></td>'),
 
   events: {
-    'click .songtext': function(ev) {
+    'click .songtext': function() {
       // this.model.play();
       this.model.enqueue();
       this.render();

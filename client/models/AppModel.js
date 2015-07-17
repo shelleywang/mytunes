@@ -18,7 +18,8 @@ var AppModel = Backbone.Model.extend({
     }, this);
 
     params.library.on('enqueue', function(song){
-      this.get('songQueue').add(song);
+      var newsong = song.clone();
+      this.get('songQueue').add(newsong);
     }, this);
 
   }
